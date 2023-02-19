@@ -23,7 +23,6 @@ uint64_t nPrime(uint64_t n) {
     return (num);
    }
 }
-}
 
 uint64_t nextPrime(uint64_t value) {
   for(uint64_t n=++value;;n++){
