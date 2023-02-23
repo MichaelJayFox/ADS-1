@@ -7,12 +7,12 @@ bool checkPrime(uint64_t value) {
 // вставьте код функции
   if(value<1) return false;
   else {
-    for(uint64_t n=2;n<value;n++){
+    for(uint64_t n=2;n<value;n++)
       if(value%n==0){
         return false;
         break;
       }
-    }
+    return true;
   }
 }
 
