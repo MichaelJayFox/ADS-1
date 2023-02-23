@@ -4,16 +4,13 @@
 
 
 bool checkPrime(uint64_t value) {
-// вставьте код функции
-  if(value<1) return false;
-  else {
-    for(uint64_t n=2;n<value;n++)
-      if(value%n==0){
-        return false;
-        break;
-      }
-    return true;
+uint64_t count = 0;
+  for (int i = 2; i*i <= value; ++i) {
+    if (value % i == 0) {
+      return false;
+    }
   }
+  return true;
 }
 
 uint64_t nPrime(uint64_t n) {
