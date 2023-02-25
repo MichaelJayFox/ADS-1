@@ -25,7 +25,7 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
-  for (uint64_t n = ++value; ;n++) {
+  for (uint64_t n = ++value; ; n++) {
     if (checkPrime (n) == true)
       return n;
   }
@@ -34,7 +34,7 @@ uint64_t nextPrime(uint64_t value) {
 uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
   uint64_t sum = 0;
-  for(uint64_t n = 2;n < hbound;n++)
+  for (uint64_t n = 2; n < hbound; n++)
     if (checkPrime(n))
       sum+=n;
   return sum;
