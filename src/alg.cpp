@@ -2,7 +2,6 @@
 #include <cstdint>
 #include "alg.h"
 
-
 bool checkPrime(uint64_t value) {
 uint64_t count = 0;
   for (int i = 2; i*i <= value; ++i) {
